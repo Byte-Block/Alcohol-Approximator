@@ -15,34 +15,8 @@ public class AproksimatorAlkohola {
 		tezina = sc.nextDouble();
 		System.out.println("Unesite vas pol (ako ste musko unesite 1, ako ste zensko unesite 0):");
 		pol = sc.nextInt();
-BodyMass = tezina * 1000;
-		/*do {
-			System.out.println("Unesite id pica koje ste pili ili -1 ako ste vec uneli sva pica koja ste pili:");
-			id_pica = sc.nextInt();
-			if (id_pica == -1) break;
-			switch (id_pica) {
-			case -1: break;
-			case 1:
-				p = 50;
-				break;
-			case 2:
-				p = 40;
-				break;
-			case 3:
-				p = 11;
-				break;
-			case 4:
-				p = 4.7;
-				break;
-			default:
-				System.out.println("Greska, zeljeni id nije u bazi podataka. Pokusajte ponovo.");
-				break;
-			}
-			System.out.println("Unesite koliko mililitara(ml) tog pica ste popili: ");
-			ml_pica = sc.nextDouble();
-			SUMA = SUMA + (ml_pica * p);
-		} while (id_pica >= 0);*/
-
+                BodyMass = tezina * 1000;
+		
 		for(; ;) {
 			System.out.println("Unesite id pica koje ste pili ili -1 ako ste vec uneli sva pica koja ste pili:");
 			id_pica = sc.nextInt();
@@ -68,9 +42,8 @@ BodyMass = tezina * 1000;
 			System.out.println("Unesite koliko mililitara(ml) tog pica ste popili: ");
 			ml_pica = sc.nextDouble();
 			SUMA = SUMA + (ml_pica * p);
-			//System.out.println(SUMA);
 		}
-		switch (pol) {//Moze korektivni faktor if uslovom da se odredi ali sam izabrao switch.
+		switch (pol) {
 		case 0: r=0.68; break;
 		case 1: r=0.55; break;
 		}
