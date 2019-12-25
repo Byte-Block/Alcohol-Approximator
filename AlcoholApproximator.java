@@ -1,5 +1,3 @@
-package paketDomaci8;
-
 import java.util.Scanner;
 
 public class AproksimatorAlkohola {
